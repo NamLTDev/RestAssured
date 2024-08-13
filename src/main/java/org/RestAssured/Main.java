@@ -5,31 +5,35 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import org.testng.Assert;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.equalTo;
 
 public class Main {
     public static String placeId;
     public static String newAddress = "My Dinh-Tu Liem-Hanoi,Vietnam";
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("Hello world!");
 
 //        given - all input details
 //        when - submit the API - resource, http method
 //        then - validate the response
-
+//        content of the file to String -> content of file can convert into Byte -> Byte to data to String
         //Add place  -> Update Place with new address -> get Place to validate if new address is presented in response
 
         RestAssured.baseURI="https://rahulshettyacademy.com";
         String response = given().log().all().queryParam("key","qaclick123").header("Content-Type","application/json")
-                .body(payload.addPlace())
+                .body(Files.readAllBytes(Paths.get("src/main/resources/data/addPlace.json")))
                 .when().post("/maps/api/place/add/json")
                 .then().assertThat().statusCode(200)
                         .body("scope",equalTo("APP"))
                         .header("server","Apache/2.4.52 (Ubuntu)")
                 .extract().response().asString();
 
-//        System.out.println(response);
+        System.out.println(response);
         JsonPath js = new JsonPath(response); //parsing json
         placeId = js.getString("place_id");
         System.out.println(placeId);
