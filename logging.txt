@@ -1,0 +1,200 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": 50,
+    "name": "Warehouse",
+    "phone_number": "+84 98 999 9999",
+    "address": "World cross center",
+    "website": "https://www.thiendia.com",
+    "language": "English",
+    "location": {
+        "lat": 51.111,
+        "lng": -12.165
+    },
+    "types": [
+        "shoe park",
+        "shop"
+    ]
+}
+HTTP/1.1 200 OK
+Date: Mon, 19 Aug 2024 15:54:22 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "8e8fa4602779cffc442e8fd930b9b746",
+    "scope": "APP",
+    "reference": "f6c7ebf7dd544da713deda97083d27ccf6c7ebf7dd544da713deda97083d27cc",
+    "id": "f6c7ebf7dd544da713deda97083d27cc"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=8e8fa4602779cffc442e8fd930b9b746
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=8e8fa4602779cffc442e8fd930b9b746
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 19 Aug 2024 15:54:23 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 240
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "51.111",
+        "longitude": "-12.165"
+    },
+    "accuracy": "50",
+    "name": "Warehouse",
+    "phone_number": "+84 98 999 9999",
+    "address": "World cross center",
+    "types": "shoe park,shop",
+    "website": "https://www.thiendia.com",
+    "language": "English"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": 50,
+    "name": "Park",
+    "phone_number": "+84 98 999 9999",
+    "address": "Anywhere",
+    "website": "https://www.thiendia.com",
+    "language": "Spanish",
+    "location": {
+        "lat": 51.111,
+        "lng": -12.165
+    },
+    "types": [
+        "shoe park",
+        "shop"
+    ]
+}
+HTTP/1.1 200 OK
+Date: Mon, 19 Aug 2024 15:54:24 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "21ec3b995716f43b37219895f045f0bd",
+    "scope": "APP",
+    "reference": "a8b5a59861a57c641edacaaec975d64fa8b5a59861a57c641edacaaec975d64f",
+    "id": "a8b5a59861a57c641edacaaec975d64f"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=21ec3b995716f43b37219895f045f0bd
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=21ec3b995716f43b37219895f045f0bd
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 19 Aug 2024 15:54:25 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 225
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "51.111",
+        "longitude": "-12.165"
+    },
+    "accuracy": "50",
+    "name": "Park",
+    "phone_number": "+84 98 999 9999",
+    "address": "Anywhere",
+    "types": "shoe park,shop",
+    "website": "https://www.thiendia.com",
+    "language": "Spanish"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "21ec3b995716f43b37219895f045f0bd"
+}
+HTTP/1.1 200 OK
+Date: Mon, 19 Aug 2024 15:54:27 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}
